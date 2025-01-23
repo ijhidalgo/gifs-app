@@ -18,4 +18,7 @@ export class SidebarComponent {
   reloadTag(tag: string): void {
     this.gifsService.searchTag(tag);
   }
+  removeTag(tag: string): void {
+    this.gifsService.removeTag(tag);
+  }
 }

@@ -60,4 +60,10 @@ export class GifsService {
     })
 
   }
+
+  removeTag(tag:string):void {
+    this._tagsHistory = this._tagsHistory.filter((t) => t !== tag);
+    this.saveLocalStorage();
+    this.loadLocalStorage();
+  }
 }
